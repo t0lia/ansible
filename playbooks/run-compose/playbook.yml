@@ -1,0 +1,13 @@
+---
+# Copy compose
+- hosts: vagrant
+  become: yes
+  tasks:
+  - name: copy compose file
+    copy:
+      src: compose/docker-compose.yml
+      dest: .
+
+  - name: start compose
+    shell: docker-compose pull && docker-compose up -d
+
