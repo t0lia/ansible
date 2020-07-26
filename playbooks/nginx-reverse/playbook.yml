@@ -1,6 +1,6 @@
 ---
 # Nginx as reverse proxy
-- hosts: vagrant
+- hosts: 95.213.194.182
   become: yes
   tasks:
   - name: ensure nginx is at the latest version

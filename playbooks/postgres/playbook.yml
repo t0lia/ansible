@@ -1,0 +1,9 @@
+---
+# Postgres
+- hosts: vagrant
+  become: yes
+  tasks:
+
+  - name: ensure postgres is at the latest version
+    apt: name=postgresql state=latest
+    become: yes

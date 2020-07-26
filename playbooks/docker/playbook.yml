@@ -1,5 +1,5 @@
 ---
-- hosts: vagrant
+- hosts: apozdniakov
   become: true
   vars_files:
   - vars/default.yml
@@ -40,7 +40,7 @@
   # sudo usermod -aG docker ubuntu
   - name: Add remote user to docker group
     user:
-      name: "vagrant"
+      name: "apozdniakov"
       group: "docker"
       append: yes
     tags:

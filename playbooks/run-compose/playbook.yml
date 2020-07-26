@@ -1,6 +1,6 @@
 ---
 # Copy compose
-- hosts: vagrant
+- hosts: holy
   become: yes
   tasks:
   - name: copy compose file
