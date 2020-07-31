@@ -1,0 +1,11 @@
+---
+
+- name: ehco cmd
+  hosts: lenovo
+  become: yes
+  tasks:
+
+  - name: show git config output always - verbosity 0 is default for debug module
+    debug:
+      msg: hello
+

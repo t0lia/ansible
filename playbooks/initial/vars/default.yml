@@ -1,4 +1,4 @@
 ---
-create_user: apozdniakov
-copy_local_key: "{{ lookup('file', lookup('env','HOME') + '/.ssh/big-theta_mac.pub') }}"
+create_user: wheel
+copy_local_key: "{{ lookup('file', lookup('env','HOME') + '/.ssh/t0lia.pub') }}"
 sys_packages: [ 'curl', 'vim', 'git', 'ufw']
