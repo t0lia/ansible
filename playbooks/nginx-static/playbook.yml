@@ -1,6 +1,6 @@
 ---
 # Nginx with static web
-- hosts: vagrant
+- hosts: target
   become: yes
   tasks:
   - name: ensure nginx is at the latest version

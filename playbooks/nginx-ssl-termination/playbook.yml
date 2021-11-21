@@ -31,3 +31,10 @@
       state: restarted
     become: yes
 
+  - name: install certbot
+    apt: name=certbot state=latest
+    become: yes
+
+  - name: install certbot nginx
+    apt: name=python3-certbot-nginx state=latest
+    become: yes

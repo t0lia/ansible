@@ -1,5 +1,5 @@
 ---
-- hosts: lenovo
+- hosts: target_root
   become: true
   vars_files:
   - vars/default.yml

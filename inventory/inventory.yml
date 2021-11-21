@@ -1,0 +1,12 @@
+---
+
+all:
+  hosts:
+    target_root:
+      ansible_host: 84.38.181.200
+      ansible_user: root
+      ansible_private_key_file: /Users/apozdniakov/.ssh/apozdniakov
+    target:
+      ansible_host: 84.38.181.200
+      ansible_user: wheel
+      ansible_private_key_file: /Users/apozdniakov/.ssh/apozdniakov
